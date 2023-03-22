@@ -1,0 +1,102 @@
+body {
+  height: 100vh;
+}
+
+.side-panel {
+  background-color: #305acfa6;
+  position: absolute;
+  width: 30%;
+  z-index: 10;
+  padding: -1px;
+  border: solid 2px #ffffff;
+  right: 7px;
+  border-radius: 18px;
+  top: 5px;
+}
+
+#main-map {
+  height: 100vh;
+  position: relative;
+}
+
+.mapboxgl-canvas {
+  width: 100%;
+}
+
+.mapboxgl-canvas-container {
+  height: 100vh;
+}
+
+.map-control-clown {
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+
+/*Style du formulaire */
+input[type="text"],
+textarea,
+input[type="number"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c3d0f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #2236cf9e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.legend {
+  padding-top: 5%;
+}
+
+.container {
+  border-radius: 9px;
+  background-color: rgb(255 255 255 / 50%);
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

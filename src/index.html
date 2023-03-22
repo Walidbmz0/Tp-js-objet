@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox</title>
+</head>
+<body>
+
+
+
+  <div id="main-map">
+    <div class="side-panel">
+
+    <div class="container">
+
+      <form novalidate class="form">
+
+        <div class="row">
+          <div class="col-25">
+            <label for="title">Titre de l'évènement</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="title" name="title" placeholder="Nom de l'évènement">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="description">Description</label>
+          </div>
+          <div class="col-75">
+            <textarea id="description" name="subject" placeholder="Décrivez l'évènement" style="height:200px"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lng">Longitude</label>
+          </div>
+          <div class="col-75">
+            <input type="number" id="lng" name="longitude" placeholder="Longitude">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lat">Latitude</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lat" name="latitude" placeholder="Latitude">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="start-date">Date de début</label>
+          </div>
+          <div class="col-75">
+            <input type="datetime-local" id="start-date" name="lastname" placeholder="Latitude">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="finish-date">Date de fin</label>
+          </div>
+          <div class="col-75">
+            <input type="datetime-local" id="finish-date" name="lastname" placeholder="Latitude">
+          </div>
+        </div>
+
+        <div class="row">
+          <input type="submit" value="Ajout" id="submit">
+        </div>
+
+      </form>
+      <!--Legende de la carte-->
+      <div class="legend">
+        <h3>Legende</h3>
+        <div class="legend-item">
+          <div class="legend-text">Vous avez le temps 🟢 </div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-text">L'évènement est bientôt terminé 🟠 </div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-text">L'évènement est terminé 🔴 </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+</body>
+</html>
